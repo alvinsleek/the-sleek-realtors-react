@@ -5,10 +5,9 @@ This is the  frontend counterpart for the real estate web application,The Sleek 
 ## Prerequisites
 Before you can run this app, you'll need to have the following installed on your machine:
 
-Npm 
+1. Npm
 
-Node.js 
-
+2. Node.js 
 ## Getting Started
 1. clone this repository to your local machine
     git clone https://github.com/alvinsleek/the-sleek-realtors-react
