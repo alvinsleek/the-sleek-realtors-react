@@ -1,48 +1,34 @@
-import React, { useState } from 'react';
+import React from "react"
+// import Back from "../common/Back"
+// import RecentCard from "../home/recent/RecentCard"
+import "../home/recent/recent.css"
+// import img from "../images/about.jpg"
 
-function SignupPage() {
-  const [name, setName] = useState('');
-  const [email, setEmail] = useState('');
-  const [password, setPassword] = useState('');
+// const Signup = () => {
+//   return (
+//     <>
+//       import React from "react";
 
-  const handleSubmit = (event) => {
-    event.preventDefault();
-    // Do something with the form data
-  };
-
+function Signup() {
   return (
-    <div>
-      <h1>Sign up</h1>
-      <form onSubmit={handleSubmit}>
-        <label htmlFor="name">Name:</label>
-        <input
-          type="text"
-          id="name"
-          value={name}
-          onChange={(event) => setName(event.target.value)}
-        />
+    <form>
+      <label htmlFor="name">Name:</label>
+      <input type="text" id="name" />
 
-        <label htmlFor="email">Email:</label>
-        <input
-          type="email"
-          id="email"
-          value={email}
-          onChange={(event) => setEmail(event.target.value)}
-        />
+      <label htmlFor="email">Email:</label>
+      <input type="email" id="email" />
 
-        <label htmlFor="password">Password:</label>
-        <input
-          type="password"
-          id="password"
-          value={password}
-          onChange={(event) => setPassword(event.target.value)}
-        />
+      <label htmlFor="password">Password:</label>
+      <input type="password" id="password" />
 
-        <button type="submit">Sign up</button>
-      </form>
-    </div>
+      <button type="submit">Sign Up</button>
+    </form>
   );
 }
 
-export default SignupPage;
+export default Signup;
+
+    
+
+
 
