@@ -5,9 +5,9 @@ import Home from "../home/Home"
 import Footer from "../common/footer/Footer"
 import About from "../about/About"
 import Signup from "../signup/Signup"
-import Blog from "../blog/Blog"
-import Services from "../services/Services"
+import Login from "../login/Login"
 import Contact from "../contact/Contact"
+import Book from "../book/book"
 
 const Pages = () => {
   return (
@@ -17,10 +17,10 @@ const Pages = () => {
         <Switch>
           <Route exact path='/' component={Home} />
           <Route exact path='/about' component={About} />
-          <Route exact path='/services' component={Services} />
-          <Route exact path='/blog' component={Blog} />
-          <Route exact path='/signup' component={Signup} />
+          <Route exact path='/login' component={Login} />
+          <Route exact path='/signup' component={Signup} /> 
           <Route exact path='/contact' component={Contact} />
+          <Route exact path='/book' component={Book} />
         </Switch>
         <Footer />
       </Router>
