@@ -11,12 +11,12 @@ import React, { useState } from "react"
       const [lastName, setLastName] = useState("");
       const [email, setEmail] = useState("");
       const [phone, setPhone] = useState("");
+      const [property, setProperty] = useState("");
       const [moveInDate, setMoveInDate] = useState("");
-    
       const handleSubmit = (event) => {
         event.preventDefault();
         // Send form data to server
-        console.log({ firstName, lastName, email, phone, moveInDate });
+        console.log({ firstName, lastName, email, phone, property });
       };
     
       return (
@@ -57,6 +57,15 @@ import React, { useState } from "react"
             required
           />
           <br />
+          <label htmlFor="Property">Property:</label>
+          <input
+            type="text"
+            id="property"
+            value={property}
+            onChange={(event) => setProperty(event.target.value)}
+            required
+          />
+          <br />
           <label htmlFor="moveInDate">Move-in Date:</label>
           <input
             type="date"
@@ -67,6 +76,8 @@ import React, { useState } from "react"
           />
           <br />
           <button type="submit">Submit</button>
+          <br />
+          
         </form>
       );
     }
