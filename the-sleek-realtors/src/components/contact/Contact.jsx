@@ -8,18 +8,22 @@ const Contact = () => {
     <>
       <section className='contact mb'>
         <Back name='Contact Us' title='Get Helps & Friendly Support' cover={img} />
-        <div className='container'>
+        <h3>Location<i class="fa-solid fa-location-dot"></i>:A & M Building, F1</h3>
+        <h3>Call us: +159302746593</h3>
+        {/* <div className='container'>
           <form className='shadow'>
             <h4>Fillup The Form</h4> <br />
             <div>
+            
               <input type='text' placeholder='Name' />
               <input type='text' placeholder='Email' />
             </div>
             <input type='text' placeholder='Subject' />
             <textarea cols='30' rows='10'></textarea>
             <button>Submit Request</button>
+
           </form>
-        </div>
+        </div> */}
       </section>
     </>
   )
