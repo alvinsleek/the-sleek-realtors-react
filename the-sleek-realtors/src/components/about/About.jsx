@@ -15,7 +15,7 @@ const About = () => {
 
             <p>The company began in 2015, founded by the director ,Alvin Mithamo who has steered the growth of the company tremendously to where it is today.</p>
             
-            <button className='btn2'>More About Us</button>
+          
           </div>
           <div className='right row'>
             <img src='./immio.jpg' alt='' />
