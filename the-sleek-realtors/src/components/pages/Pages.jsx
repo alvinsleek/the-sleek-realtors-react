@@ -8,6 +8,7 @@ import Login from "../login/Login"
 import Book from "../book/Book"
 import Contact from "../contact/Contact"
 import Signup from "../signup/Signup.jsx"
+import Admin from "../admin/Admin"
 
 const Pages = () => {
   return (
@@ -21,6 +22,7 @@ const Pages = () => {
           <Route exact path='/signup' component={Signup} />
           <Route exact path='/login' component={Login} />
           <Route exact path='/contact' component={Contact} />
+          <Route exact path='/admin' component={Admin} />
         </Switch>
         <Footer />
       </Router>
