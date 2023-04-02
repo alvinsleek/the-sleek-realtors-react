@@ -25,23 +25,11 @@ const Footer = () => {
               <img src='../images/logo.png' alt='' />
               <h2>Your ultimate Real estate partner!</h2>
               
-              {/* <div className='input flex'>
-                <input type='text' placeholder='Email Address' />
-                <button>Subscribe</button>
-              </div> */}
+              
             </div>
           </div>
 
-          {/* {footer.map((val) => (
-            <div className='box'>
-              <h3>{val.title}</h3>
-              <ul>
-                {val.text.map((items) => (
-                  <li> {items.list} </li>
-                ))}
-              </ul>
-            </div>
-          ))} */}
+ 
         </div>
       </footer>
       <div className='legal'>
