@@ -1,18 +1,19 @@
 import React, { useState } from "react"
 // import img from "../images/services.jpg"
 // import Back from "../common/Back"
-// import "../home/featured/Featured.css"
+import "./rentals.css"
 // import FeaturedCard from "../home/featured/FeaturedCard"
 
 
 
-    const Book = () => {
+    const Rentals = () => {
       const [firstName, setFirstName] = useState("");
       const [lastName, setLastName] = useState("");
       const [email, setEmail] = useState("");
       const [phone, setPhone] = useState("");
       const [property, setProperty] = useState("");
       const [moveInDate, setMoveInDate] = useState("");
+
       const handleSubmit = async (event) => {
         event.preventDefault();
         const requestOptions = {
@@ -24,6 +25,8 @@ import React, { useState } from "react"
         const response = await fetch('/rentals', requestOptions);
         const data = await response.json();
         console.log(data);
+        //fetch updated rentals data from server
+        // fetchRentals();
       }
       catch (error) {
         console.log(error);
@@ -93,7 +96,7 @@ import React, { useState } from "react"
       );
     }
     
-    export default Book;
+    export default Rentals;
     
 
 
