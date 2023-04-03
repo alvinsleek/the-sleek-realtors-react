@@ -5,7 +5,7 @@ import Home from "../home/Home"
 import Footer from "../common/footer/Footer"
 import About from "../about/About"
 import Login from "../login/Login"
-import Book from "../book/Book"
+import Rentals from "../rentals/Rentals"
 import Contact from "../contact/Contact"
 import Signup from "../signup/Signup.jsx"
 import Admin from "../admin/Admin"
@@ -18,7 +18,7 @@ const Pages = () => {
         <Switch>
           <Route exact path='/' component={Home} />
           <Route exact path='/about' component={About} />
-          <Route exact path='/book' component={Book} />
+          <Route exact path='/rentals' component={Rentals} />
           <Route exact path='/signup' component={Signup} />
           <Route exact path='/login' component={Login} />
           <Route exact path='/contact' component={Contact} />
