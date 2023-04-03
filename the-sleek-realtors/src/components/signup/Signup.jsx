@@ -17,10 +17,10 @@ const Signup = () => {
   const handleSubmit = async (event) => {
     event.preventDefault();
     const user = {name: name, email, password};
-    const response = await axios.post("/login", { user });
+    const response = await axios.post("http://localhost:3000/api/v1/users", { user });
     console.log(response);
-    window.location.href = "/login";
-
+     window.location.href = "/login";
+ 
     history.push({
       pathname:"/",
       state: {username: name },
