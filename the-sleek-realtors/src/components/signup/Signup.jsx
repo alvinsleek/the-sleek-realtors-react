@@ -1,7 +1,7 @@
 import React, { useState } from "react"
 import { useHistory } from "react-router-dom"
 import "../home/recent/recent.css"
-import axios from "axios";
+
 
 
 const Signup = () => {
@@ -14,7 +14,7 @@ const Signup = () => {
   const handleSubmit = async (event) => {
     event.preventDefault();
     const user = {name: name, email, password};
-<<<<<<< HEAD
+
     try {
       const response = await fetch("http://localhost:3000/api/v1/users",
       {
@@ -25,26 +25,15 @@ const Signup = () => {
           body: JSON.stringify({ user }),
         });
       console.log(response);
-     window.location.href = "/login";
+     window.location.href = "/login";// user is redirected to the login page
+ 
     } catch (error) {
       console.log(error);
     }
   };
-    
-=======
-    const response = await axios.post("http://localhost:3000/api/v1/users", { user });
-    console.log(response);
-     window.location.href = "/login";// user is redirected to the login page
- 
 
-     //browser history gets updated and pushes user's name to the state object
-    history.push({
-      pathname:"/",
-      state: {username: name },
-    })
-  };
   //render
->>>>>>> f377df5321774b0125853435c63ba2c66b2559da
+
   return (
     <form onSubmit={handleSubmit} action="/signup" method="POST">
       <label htmlFor="name">Name:</label>
@@ -64,6 +53,6 @@ const Signup = () => {
     </form>
     
   );
-}
+  }
 
 export default Signup;
