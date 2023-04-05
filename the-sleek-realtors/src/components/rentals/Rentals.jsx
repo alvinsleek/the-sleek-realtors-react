@@ -13,7 +13,7 @@ import "./rentals.css"
       const [phone, setPhone] = useState("");
       const [property, setProperty] = useState("");
       const [moveInDate, setMoveInDate] = useState("");
-
+// handelSubmit which handles the tenant details
       const handleSubmit = async (event) => {
         event.preventDefault();
         const requestOptions = {
@@ -26,7 +26,7 @@ import "./rentals.css"
         const data = await response.json();
         console.log(data);
         //fetch updated rentals data from server
-        // fetchRentals();
+        
       }
       catch (error) {
         console.log(error);
