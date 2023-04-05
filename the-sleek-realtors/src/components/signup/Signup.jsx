@@ -3,7 +3,7 @@ import { useHistory } from "react-router-dom"
 import "../home/recent/recent.css"
 import axios from "axios";
 
-//define the signup component
+
 const Signup = () => {
   const history = useHistory(); // the useHistory object is gotten from the react-router-dom module
   // state variables used are initialized using UseState
